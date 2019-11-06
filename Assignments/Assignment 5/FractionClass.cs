@@ -104,14 +104,14 @@ public class Fraction
              return Convert.ToString(numerator);
          else if (denominator == -1) // if denominator is -1, return negative whole number (numerator)
              return "-" + Convert.ToString(numerator);
-         else
-             if (numerator < 0 && denominator < 0) // if both are negative, must convert to postive instead of showing neg val over neg val
-             {
-                 return Convert.ToString(Math.Abs(numerator)) + "/" + Convert.ToString(Math.Abs(denominator)); // return ABSOLUTE val to convert to positive
+         else // if both are negative, must convert to postive instead of showing neg val over neg val
+             if (numerator < 0 && denominator < 0) 
+             {   // return ABSOLUTE val to convert to positive
+                 return Convert.ToString(Math.Abs(numerator)) + "/" + Convert.ToString(Math.Abs(denominator)); 
              }
              else
-             {
-                 return Convert.ToString(numerator) + "/" + Convert.ToString(denominator); // else, return equation format with string concatenation
+             {   // else, return equation format with string concatenation
+                 return Convert.ToString(numerator) + "/" + Convert.ToString(denominator); 
              }
      }
      // Multiply method
