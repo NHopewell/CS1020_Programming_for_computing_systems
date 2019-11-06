@@ -1,4 +1,4 @@
-﻿
+
 
 /* Assignment 5
  * Nicholas Hopewell - 0496633
@@ -88,7 +88,7 @@ public static class FractionAssignment
                             Console.Write("Enter a denominator => "); // prompt for denominator
                             inpDenom = Convert.ToInt32(Console.ReadLine()); // try to convert to int
                             if (inpDenom == 0)
-                                Console.WriteLine("**Warning: User entered a denominator of 0, converted denominator to 1**"); // warn for converting 0 to 1
+                                Console.WriteLine("**Warning: User entered a denominator of 0, converted denominator to 1**"); 
                             inp = false;
                         }
                         catch (FormatException) // catch anything but int
@@ -103,30 +103,84 @@ public static class FractionAssignment
                     Console.WriteLine("\nFraction entered reduced to it's smallest form: {0}", fraction1.ToString());
                     Console.WriteLine("Now let's do some math with this fraction...\n");
 
-                    // print reduced fraction plus four different fractions and the result after adding (using overloaded operators)
-                    Console.WriteLine("Your fraction {0} + {1} is equal to {2}", fraction1.ToString(), fraction2.ToString(), (fraction1 + fraction2).ToString());
-                    Console.WriteLine("Your fraction {0} + {1} is equal to {2}", fraction1.ToString(), fraction3.ToString(), (fraction1 + fraction3).ToString());
-                    Console.WriteLine("Your fraction {0} + {1} is equal to {2}", fraction1.ToString(), fraction4.ToString(), (fraction1 + fraction4).ToString());
-                    Console.WriteLine("Your fraction {0} + {1} is equal to {2}", fraction1.ToString(), fraction5.ToString(), (fraction1 + fraction5).ToString());
-                    Console.WriteLine("Your fraction {0} + {1} is equal to {2}\n", fraction1.ToString(), fraction6.ToString(), (fraction1 + fraction6).ToString());
-                    // print reduced fraction multiplied by four different fractions and the result after multiplying (using overloaded operators)
-                    Console.WriteLine("Your fraction {0} * {1} is equal to {2}", fraction1.ToString(), fraction2.ToString(), (fraction1 * fraction2).ToString());
-                    Console.WriteLine("Your fraction {0} * {1} is equal to {2}", fraction1.ToString(), fraction3.ToString(), (fraction1 * fraction3).ToString());
-                    Console.WriteLine("Your fraction {0} * {1} is equal to {2}", fraction1.ToString(), fraction4.ToString(), (fraction1 * fraction4).ToString());
-                    Console.WriteLine("Your fraction {0} * {1} is equal to {2}", fraction1.ToString(), fraction5.ToString(), (fraction1 * fraction5).ToString());
-                    Console.WriteLine("Your fraction {0} * {1} is equal to {2}\n", fraction1.ToString(), fraction6.ToString(), (fraction1 * fraction6).ToString());
-                    // print reduced fraction compared to four different fractions for greater than or equal to and the result after comparison (using overloaded operators)
-                    Console.WriteLine("Your fraction {0} >= {1} is equal to {2}", fraction1.ToString(), fraction2.ToString(), fraction1 >= fraction2);
-                    Console.WriteLine("Your fraction {0} >= {1} is equal to {2}", fraction1.ToString(), fraction3.ToString(), fraction1 >= fraction3);
-                    Console.WriteLine("Your fraction {0} >= {1} is equal to {2}", fraction1.ToString(), fraction4.ToString(), fraction1 >= fraction4);
-                    Console.WriteLine("Your fraction {0} >= {1} is equal to {2}", fraction1.ToString(), fraction5.ToString(), fraction1 >= fraction5);
-                    Console.WriteLine("Your fraction {0} >= {1} is equal to {2}\n", fraction1.ToString(), fraction6.ToString(), fraction1 >= fraction6);
-                    // print reduced fraction compared to four different fractions for less than or equal to and the result after comparison (using overloaded operators)
-                    Console.WriteLine("Your fraction {0} <= {1} is equal to {2}", fraction1.ToString(), fraction2.ToString(), fraction1 <= fraction2);
-                    Console.WriteLine("Your fraction {0} <= {1} is equal to {2}", fraction1.ToString(), fraction3.ToString(), fraction1 <= fraction3);
-                    Console.WriteLine("Your fraction {0} <= {1} is equal to {2}", fraction1.ToString(), fraction4.ToString(), fraction1 <= fraction4);
-                    Console.WriteLine("Your fraction {0} <= {1} is equal to {2}", fraction1.ToString(), fraction5.ToString(), fraction1 <= fraction5);
-                    Console.WriteLine("Your fraction {0} <= {1} is equal to {2}\n", fraction1.ToString(), fraction6.ToString(), fraction1 <= fraction6);
+                    // print reduced fraction plus four different fractions and the result after adding
+                    //(using overloaded operators)
+                    Console.WriteLine(
+                        "Your fraction {0} + {1} is equal to {2}", 
+                            fraction1.ToString(), fraction2.ToString(), (fraction1 + fraction2).ToString()
+                        );
+                    Console.WriteLine(
+                        "Your fraction {0} + {1} is equal to {2}", 
+                            fraction1.ToString(), fraction3.ToString(), (fraction1 + fraction3).ToString()
+                        );
+                    Console.WriteLine(
+                        "Your fraction {0} + {1} is equal to {2}", 
+                            fraction1.ToString(), fraction4.ToString(), (fraction1 + fraction4).ToString()
+                        );
+                    Console.WriteLine(
+                        "Your fraction {0} + {1} is equal to {2}", 
+                            fraction1.ToString(), fraction5.ToString(), (fraction1 + fraction5).ToString()
+                        );
+                    Console.WriteLine(
+                        "Your fraction {0} + {1} is equal to {2}\n", 
+                            fraction1.ToString(), fraction6.ToString(), (fraction1 + fraction6).ToString()
+                        );
+                    // print reduced fraction multiplied by four different fractions and the result after multiplying 
+                    //(using overloaded operators)
+                    Console.WriteLine(
+                        "Your fraction {0} * {1} is equal to {2}",
+                            fraction1.ToString(), fraction2.ToString(), (fraction1 * fraction2).ToString()
+                        );
+                    Console.WriteLine(
+                        "Your fraction {0} * {1} is equal to {2}", 
+                            fraction1.ToString(), fraction3.ToString(), (fraction1 * fraction3).ToString()
+                        );
+                    Console.WriteLine(
+                        "Your fraction {0} * {1} is equal to {2}", 
+                            fraction1.ToString(), fraction4.ToString(), (fraction1 * fraction4).ToString()
+                            );
+                    Console.WriteLine(
+                        "Your fraction {0} * {1} is equal to {2}", 
+                            fraction1.ToString(), fraction5.ToString(), (fraction1 * fraction5).ToString()
+                            );
+                    Console.WriteLine(
+                        "Your fraction {0} * {1} is equal to {2}\n", 
+                            fraction1.ToString(), fraction6.ToString(), (fraction1 * fraction6).ToString()
+                            );
+                    // print reduced fraction compared to four different fractions for greater than or equal to and the 
+                    // after comparison (using overloaded operators)
+                    Console.WriteLine(
+                        "Your fraction {0} >= {1} is equal to {2}", 
+                            fraction1.ToString(), fraction2.ToString(), fraction1 >= fraction2);
+                    Console.WriteLine(
+                        "Your fraction {0} >= {1} is equal to {2}", 
+                            fraction1.ToString(), fraction3.ToString(), fraction1 >= fraction3);
+                    Console.WriteLine(
+                        "Your fraction {0} >= {1} is equal to {2}", 
+                            fraction1.ToString(), fraction4.ToString(), fraction1 >= fraction4);
+                    Console.WriteLine(
+                        "Your fraction {0} >= {1} is equal to {2}",
+                            fraction1.ToString(), fraction5.ToString(), fraction1 >= fraction5);
+                    Console.WriteLine(
+                        "Your fraction {0} >= {1} is equal to {2}\n", 
+                            fraction1.ToString(), fraction6.ToString(), fraction1 >= fraction6);
+                    // print reduced fraction compared to four different fractions for less than or equal to and the result
+                    // after comparison (using overloaded operators)
+                    Console.WriteLine(
+                        "Your fraction {0} <= {1} is equal to {2}", 
+                            fraction1.ToString(), fraction2.ToString(), fraction1 <= fraction2);
+                    Console.WriteLine(
+                        "Your fraction {0} <= {1} is equal to {2}", 
+                            fraction1.ToString(), fraction3.ToString(), fraction1 <= fraction3);
+                    Console.WriteLine(
+                        "Your fraction {0} <= {1} is equal to {2}", 
+                            fraction1.ToString(), fraction4.ToString(), fraction1 <= fraction4);
+                    Console.WriteLine(
+                        "Your fraction {0} <= {1} is equal to {2}", 
+                            fraction1.ToString(), fraction5.ToString(), fraction1 <= fraction5);
+                    Console.WriteLine(
+                        "Your fraction {0} <= {1} is equal to {2}\n", 
+                            fraction1.ToString(), fraction6.ToString(), fraction1 <= fraction6);
                 }
             }
             catch (FormatException) // anything but a character is entered
@@ -135,7 +189,7 @@ public static class FractionAssignment
             }
             catch (System.OverflowException) // catching an integer overflow is user enters huge integer 
             {
-                Console.WriteLine("\nValue entered is too large. Please try again with a smaller number.\n"); // warn user
+                Console.WriteLine("\nValue entered is too large. Please try again with a smaller number.\n");
             }
 
         } while (char.ToLower(choice) != 'n'); // while user has not chose 'n' for no
@@ -147,4 +201,3 @@ public static class FractionAssignment
 
     }
 }
-
