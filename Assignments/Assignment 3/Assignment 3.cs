@@ -2,8 +2,6 @@
 // Nicholas Hopewell
 // 0496633
 
-// I am using my *** LATE CREDIT *** to hand this in 3 business days late.
-
 /* Account Transaction Program:
         This program allows the user to deposit ('D') and withdraw ('W') money from their account and see their account balance ('P').
         The user must only deposit or withdraw a positive amount.
