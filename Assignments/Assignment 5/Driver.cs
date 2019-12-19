@@ -1,6 +1,5 @@
 /* Assignment 5
  * Nicholas Hopewell - 0496633
- * COIS 1020h Winter 2018
  * 
  * 
  * 
