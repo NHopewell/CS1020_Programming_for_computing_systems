@@ -1,6 +1,5 @@
 ﻿/* Assignment 5
  * Nicholas Hopewell - 0496633
- * COIS 1020h Winter 2018
  * 
  * Objects of the Fraction class have two public properties: Numerator and Denominator
  *  in which the private numerator and denominator data fields can be accessed. Also, Fraction objects have
